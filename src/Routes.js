@@ -6,7 +6,7 @@ import Home from './Home';
 import Dashboard from './Dashboard';
 
 
-export const AppStack = createStackNavigator({
+const AppStack = createStackNavigator({
     Home: {
         screen: Home,
         navigationOptions: {
@@ -21,7 +21,7 @@ export const AppStack = createStackNavigator({
     }
 });
 
-export const Routes = createAppContainer(
+const Routes = createAppContainer(
     createSwitchNavigator(
         {
             App: AppStack,
